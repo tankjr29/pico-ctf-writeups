@@ -1,5 +1,5 @@
 # Writeups PicoCTF — Session 2
-**Auteur :** Étudiant L3 RIST  
+**Auteur :** Agbenonzan Kossivi Jacques Junior, Étudiant L3 RIST  
 **Date :** 30 avril 2026  
 **Catégories :** General Skills, Cryptography  
 **Challenges résolus :** 5
