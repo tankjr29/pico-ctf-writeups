@@ -60,10 +60,15 @@ Code Python pour décryptage :
 ciphertext = "Votre Hash Ici"
 
 for shift in range(26):
-    decoded = "".join(
-        chr((ord(char) - 97 + shift) % 26 + 97) for char in ciphertext
-    )
-    print(f"Shift +{shift:2d} : {decoded}")
+    decoded = ""
+    for char in ciphertext:
+        if char.islower():
+            decoded += chr((ord(char) - ord('a') - shift) % 26 + ord('a'))
+        elif char.isupper():
+            decoded += chr((ord(char) - ord('A') - shift) % 26 + ord('A'))
+        else:
+            decoded += char  # garde {, }, chiffres, _ tels quels
+    print(f"Shift -{shift:2d} : {decoded}")
 ```
 
 ### Flag
