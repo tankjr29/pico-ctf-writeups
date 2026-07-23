@@ -55,6 +55,17 @@ rgdhhxcviwtgjqxrdcbxpotman → crossingtherubiconmiazexly
 
 "Crossing the Rubicon" — expression de Jules César signifiant franchir le point de non-retour. Beau clin d'œil historique pour un challenge César !
 
+```
+Code Python pour décryptage :
+ciphertext = "Votre Hash Ici"
+
+for shift in range(26):
+    decoded = "".join(
+        chr((ord(char) - 97 + shift) % 26 + 97) for char in ciphertext
+    )
+    print(f"Shift +{shift:2d} : {decoded}")
+```
+
 ### Flag
 ```
 picoCTF{crossingtherubiconmiazexly}
